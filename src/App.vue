@@ -12,6 +12,10 @@ export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  created () {
+    console.log(this.$store, 'store')
+    this.$store.commit('changeA', 1)
   }
 }
 </script>
